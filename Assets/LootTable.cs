@@ -8,6 +8,41 @@ public class LootTable : MonoBehaviour
 {
     [SerializeField] private List<string> ChestTypes = new List <string>();
     [SerializeField] private List<string> DropTypes = new List<string>();
+    [SerializeField] private int wood;
+    [SerializeField] private int bronze;
+    [SerializeField] private int silver;
+    [SerializeField] private int gold;
+    [SerializeField] private int platinum;
+    [Header ("Wood Chest")]
+    [SerializeField] private int wCommon;
+    [SerializeField] private int wUncommon;
+    [SerializeField] private int wRare;
+    [SerializeField] private int wEpic;
+    [SerializeField] private int wLegendary;
+    [Header ("Bronze Chest")]
+    [SerializeField] private int bCommon;
+    [SerializeField] private int bUncommon;
+    [SerializeField] private int bRare;
+    [SerializeField] private int bEpic;
+    [SerializeField] private int bLegendary;
+    [Header ("Silver Chest")]
+    [SerializeField] private int sCommon;
+    [SerializeField] private int sUncommon;
+    [SerializeField] private int sRare;
+    [SerializeField] private int sEpic;
+    [SerializeField] private int sLegendary;
+    [Header ("Gold Chest")]
+    [SerializeField] private int gCommon;
+    [SerializeField] private int gUncommon;
+    [SerializeField] private int gRare;
+    [SerializeField] private int gEpic;
+    [SerializeField] private int gLegendary;
+    [Header ("Platinum Chest")]
+    [SerializeField] private int pCommon;
+    [SerializeField] private int pUncommon;
+    [SerializeField] private int pRare;
+    [SerializeField] private int pEpic;
+    [SerializeField] private int pLegendary;
 
     // Start is called before the first frame update
     void Start()
@@ -28,41 +63,41 @@ public class LootTable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int wood = 200;
-        int bronze = wood + 100;
-        int silver = bronze + 50;
-        int gold = silver + 25;
-        int platinum = gold + 5;
+        wood = 200;
+        bronze = wood + 100;
+        silver = bronze + 50;
+        gold = silver + 25;
+        platinum = gold + 5;
 
-        int wCommon = 100;
-        int wUncommon = wCommon + 75;
-        int wRare = wUncommon + 50;
-        int wEpic =  wRare + 25;
-        int wLegendary = wEpic + 1;
+        wCommon = 100;
+        wUncommon = wCommon + 75;
+        wRare = wUncommon + 50;
+        wEpic =  wRare + 25;
+        wLegendary = wEpic + 1;
 
-        int bCommon = 100;
-        int bUncommon = bCommon + 75;
-        int bRare = bUncommon + 50;
-        int bEpic = bRare + 25;
-        int bLegendary = bEpic + 1;
+        bCommon = 100;
+        bUncommon = bCommon + 75;
+        bRare = bUncommon + 50;
+        bEpic = bRare + 25;
+        bLegendary = bEpic + 1;
 
-        int sCommon = 75;
-        int sUncommon = sCommon + 50;
-        int sRare = sUncommon + 25;
-        int sEpic = sRare + 10;
-        int sLegendary = sEpic + 5;
+        sCommon = 75;
+        sUncommon = sCommon + 50;
+        sRare = sUncommon + 25;
+        sEpic = sRare + 10;
+        sLegendary = sEpic + 5;
 
-        int gCommon = 50;
-        int gUncommon = gCommon + 25;
-        int gRare = gUncommon + 10;
-        int gEpic = gRare + 5;
-        int gLegendary = gEpic + 1;
+        gCommon = 50;
+        gUncommon = gCommon + 25;
+        gRare = gUncommon + 10;
+        gEpic = gRare + 5;
+        gLegendary = gEpic + 1;
 
-        int pCommon = 10;
-        int pUncommon = pCommon + 25;
-        int pRare = pUncommon + 5;
-        int pEpic = pRare + 15;
-        int pLegendary = pEpic + 10;
+        pCommon = 10;
+        pUncommon = pCommon + 25;
+        pRare = pUncommon + 5;
+        pEpic = pRare + 15;
+        pLegendary = pEpic + 10;
 
         if (Input.GetKeyUp(KeyCode.Space))
         {
